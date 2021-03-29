@@ -115,20 +115,25 @@ body {
 
 /* Start The navbar */
 
-.sing-in {
- background-color: var(--primary) !important;
- border-radius: 20px 0 0px 20px;
- border-right: 1px solid white;
-}
-
-.sing-up {
-    background-color: var(--primary) !important;
-    border-radius: 0px 20px 20px 2px;
-}
-
-.sing-in>a,
-.sing-up>a {
-    color: white !important;
+@media (min-width: 992px) {
+    .sing-in {
+        background-color: var(--primary) !important;
+        border-radius: 20px 0 0px 20px;
+        border-right: 1px solid white;
+    }
+    .sing-up {
+        background-color: var(--primary) !important;
+        border-radius: 0px 20px 20px 2px;
+    }
+    .sing-in>a,
+    .sing-up>a {
+        color: white !important;
+    }
+    .home-about-link
+    {
+        font-family: Muli-Bold;
+        color: var(--second) !important;
+    }
 }
 
 /* End The navbar */
@@ -244,4 +249,26 @@ body {
     background-color: var(--primaryDark);
     border-color: var(--primaryDark);
     border-radius: 40px !important;
+}
+
+@media (max-width: 992px)
+{
+    .btn-primary
+    {
+        font-size: 80%;
+    }
+    .navbar-nav > li:hover
+    {
+        background-color: var(--primary);
+        border-radius: 50px;
+    }
+    .navbar-nav > li > a
+    {
+        font-family: Muli-Bold;
+        color: var(--second) !important;
+    }
+    .navbar-nav > li > a:hover
+    {
+        color: white !important;
+    }
 }
