@@ -140,18 +140,6 @@ body {
 
 /* Start the slider */
 
-.slider
-{
-	background-color: #DDD;
-}
-
-.slider .carousel-inner
-{
-	display: flex;
-	align-items: center;
-	justify-content: left;
-}
-
 .slider .carousel-item
 {
 	-webkit-background-size: cover;
@@ -161,38 +149,27 @@ body {
 	background-position: center center;
 }
 
-.slider .carousel-one
+.swiper-wrapper .carousel-one
 {
     background-image: url('../images/run.jpg');
 }
 
-.slider .carousel-two
+.swiper-wrapper .carousel-two
 {
     background-image: url('../images/basketball.jpg');
 }
 
-.slider .carousel-three
+.swiper-wrapper .carousel-three
 {
     background-image: url('../images/chess.jpg');
 }
 
-.slider .carousel-four
+.swiper-wrapper .carousel-four
 {
     background-image: url('../images/painting.jpg');
 }
 
-
-/* .slider .carousel-inner h1
-{
-	position: absolute;
-	z-index: 3;
-	color: #FFF;
-	font-size: 70px;
-    left: 100px;
-    text-align: center;
-} */
-
-.slider .carousel-inner .overlay
+.swiper-container .overlay
 {
 	position: absolute;
 	width: 100%;
@@ -230,8 +207,8 @@ body {
     right: 0;
     z-index: 3;
 }
-/* 
-.let-go-text
+
+/* .let-go-text
 {
     color: white;
     font-size: 200%;
@@ -248,6 +225,13 @@ body {
 {
     background-color: var(--primaryDark);
     border-color: var(--primaryDark);
+    border-radius: 40px !important;
+}
+
+.btn-primary:active
+{
+    background-color: var(--primaryDark) !important;
+    border-color: var(--primaryDark) !important;
     border-radius: 40px !important;
 }
 
@@ -271,4 +255,17 @@ body {
     {
         color: white !important;
     }
+}
+
+@media (max-width: 768px)
+{
+    .btn-primary
+    {
+        font-size: 9px;
+    }
+}
+
+.swiper-pagination-bullet-active
+{
+    background-color: var(--primary) !important;
 }

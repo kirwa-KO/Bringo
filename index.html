@@ -6,8 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bringo</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="icon" href="images/bringo.jpeg">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="images/bringo.jpeg">
+    <link rel="stylesheet" href="css/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -39,65 +41,50 @@
       
 		<!-- start the slider -->
 
-		<div class="slider">
-			<div id="mainCarousel" class="carousel slide" data-ride="carousel">
-				<div class="carousel-inner">
-					<!-- <h1 class="muli-bold">Let's <span class="animate-typing"
-                        data-animate-loop="true"
-                        data-type-speed="200"
-                        data-type-delay="150"
-                        data-remove-speed="50"
-                        data-remove-delay="500"
-                        data-cursor-speed="700"
-                        >Run|Play Chess|Paint|Jump
-                        </span></h1> -->
-                    <!-- <h1 class="muli-bold">Let's Run</h1> -->
-                    
-                    <div class="above-section-center">
-                        <div class="container text-center">
-                            <p class="let-go-text muli-bold">Let's <span class="animate-typing"
-                                data-animate-loop="true"
-                                data-type-speed="200"
-                                data-type-delay="150"
-                                data-remove-speed="50"
-                                data-remove-delay="500"
-                                data-cursor-speed="700"
-                                >Run|Play Chess|Paint|Jump
-                                </span></p>
-                            <!-- <h1 class="let-go-text muli-bold">Let's Run</h1> -->
-                        </div>
-                    </div>
+			<!-- Slider main container -->
+	<div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="above-section-center">
+            <div class="container text-center">
+                <p class="let-go-text muli-bold">Let's <span class="animate-typing"
+                    data-animate-loop="true"
+                    data-type-speed="200"
+                    data-type-delay="150"
+                    data-remove-speed="50"
+                    data-remove-delay="500"
+                    data-cursor-speed="700"
+                    >Run|Play Chess|Paint|Jump
+                    </span></p>
+            </div>
+        </div>
 
-                    <div class="section-center">
-                        <div class="container text-center">
-                            <button class="btn btn-primary px-4 py-4 mr-5">I AM FROM UM6P</button>
-                            <button class="btn btn-primary px-4 py-4 ml-5">I AM NOT FROM UM6P</button>
-                        </div>
-                    </div>
-
-                    <div class="overlay"></div>
-                    
-					<div class="carousel-item active carousel-one"></div>
-					<div class="carousel-item carousel-two"></div>
-					<div class="carousel-item carousel-three"></div>
-					<div class="carousel-item carousel-four"></div>
-				</div>
-				<ol class="carousel-indicators">
-					<li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#mainCarousel" data-slide-to="1"></li>
-					<li data-target="#mainCarousel" data-slide-to="2"></li>
-					<li data-target="#mainCarousel" data-slide-to="3"></li>
-				</ol>
-			</div>
+        <div class="section-center">
+            <div class="container text-center">
+                <button class="btn btn-primary px-4 py-4 mr-5">I AM FROM UM6P</button>
+                <button class="btn btn-primary px-4 py-4 ml-5">I AM NOT FROM UM6P</button>
+            </div>
+        </div>
+        <div class="overlay"></div>
+		<div class="swiper-wrapper">
+			<!-- Slides -->
+			<div class="swiper-slide carousel-one"></div>
+			<div class="swiper-slide carousel-two"></div>
+			<div class="swiper-slide carousel-three"></div>
+			<div class="swiper-slide carousel-four"></div>
+			...
 		</div>
+		<!-- If we need pagination -->
+		<div class="swiper-pagination"></div>
+	</div>
 
         <!-- End the slider -->
         
-      <script src="js/jquery-3.5.1.min.js"></script>
-      <script src="js/jquery.animateTyping.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="js/main.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.animateTyping.js"></script>
+    <script src="js/swiper-bundle.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
