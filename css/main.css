@@ -156,7 +156,7 @@ body {
 
 .swiper-wrapper .carousel-two
 {
-    background-image: url('../images/basketball.jpg');
+    background-image: url('../images/paint.jpg');
 }
 
 .swiper-wrapper .carousel-three
@@ -166,7 +166,7 @@ body {
 
 .swiper-wrapper .carousel-four
 {
-    background-image: url('../images/painting.jpg');
+    background-image: url('../images/football.jpg');
 }
 
 .swiper-container .overlay
@@ -261,7 +261,7 @@ body {
 {
     .btn-primary
     {
-        font-size: 9px;
+        font-size: 10px;
     }
 }
 
