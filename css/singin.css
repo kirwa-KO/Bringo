@@ -1,0 +1,69 @@
+/* Start Singin Form */
+body
+{
+    overflow: hidden;
+}
+
+.gray-color
+{
+    color: var(--gray);
+}
+
+.white-color
+{
+    color: #fff;
+}
+
+.from-div
+{
+    border: solid 1px #ced4da;
+    border-radius: 5px 5px 5px 5px;
+    color: var(--gray);
+}
+
+.checked
+{
+    background-color: var(--primary);
+    color: white;
+    -webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+.from-um6p
+{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.from-other
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* .not-checked
+{
+    color: var(--gray);
+    border: dotted 1px var(--gray);
+    border-radius: 0px 5px 5px 0px;
+} */
+
+input[type="radio"]
+{
+    display: none;
+}
+
+/* div:has(input[type="radio"]:checked)
+{
+    background-color: var(--primary);
+    color: #fff;
+}
+
+input[type="radio"]:not(:checked)
+{
+    color: #5f5770;
+} */
+
+/* End Singin Form */

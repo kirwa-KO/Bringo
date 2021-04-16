@@ -10,6 +10,20 @@
     <link rel="icon" href="images/bringo.jpeg">
     <link rel="stylesheet" href="css/swiper-bundle.css" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <style>
+        .swiper-slide > p
+        {
+            /* display: flex;
+            justify-content: center; */
+            position: absolute;
+            top: 70%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-family: Muli-Bold;
+            font-size: 200%;
+        }
+    </style>
 </head>
 
 <body>
@@ -44,7 +58,7 @@
 			<!-- Slider main container -->
 	<div class="swiper-container">
         <!-- Additional required wrapper -->
-        <div class="above-section-center">
+        <!-- <div class="above-section-center">
             <div class="container text-center">
                 <p class="let-go-text muli-bold">Let's <span class="animate-typing"
                     data-animate-loop="true"
@@ -56,22 +70,20 @@
                     >Run|Play Chess|Paint|Jump
                     </span></p>
             </div>
-        </div>
+        </div> -->
 
         <div class="section-center">
             <div class="container text-center">
-                <button class="btn btn-primary px-4 py-4 mr-md-5">I AM FROM UM6P</button>
-                <button class="btn btn-primary px-4 py-4 ml-md-5">I AM NOT FROM UM6P</button>
+                <button class="btn btn-primary px-4 py-4 mr-md-5">Join Bringo</button>
             </div>
         </div>
-        <div class="overlay"></div>
+        <!-- <div class="overlay"></div> -->
 		<div class="swiper-wrapper">
 			<!-- Slides -->
-			<div class="swiper-slide carousel-one"></div>
-			<div class="swiper-slide carousel-two"></div>
-			<div class="swiper-slide carousel-three"></div>
-			<div class="swiper-slide carousel-four"></div>
-			...
+			<div class="swiper-slide carousel-one"><p>Let's Run</p></div>
+			<div class="swiper-slide carousel-two"><p>Let's Paint</p></div>
+			<div class="swiper-slide carousel-three"><p>Let's Play Chess</p></div>
+			<div class="swiper-slide carousel-four"><p>Let's Play BasketBall</p></div>
 		</div>
 		<!-- If we need pagination -->
 		<div class="swiper-pagination"></div>
