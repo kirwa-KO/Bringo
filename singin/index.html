@@ -42,28 +42,42 @@
             <div class="col-12 mt-4 muli-bold mb-5">
                 <h2>Sign up on Bringo now</h2>
             </div>
-            <label class="col-12 text-left gray-color" for="form">I am From</label>
-            <div class="col-12 mb-4">
-                <div class="row from-div mx-2">
-                    <div class="col-6 p-1 checked from-um6p">
-                        <label>
-                            <input type="radio" name="from" id="0" checked class="d-none">
-                            <span>From UM6P</span>
-                        </label>
-                    </div>
-                    <div class="col-6 p-1 not-checked from-other">
-                        <label>
-                            <input type="radio" name="from" id="1" class="d-none">
-                            <span>From Other</span>
-                        </label>
+            <form method="POST" action="https://form.taxi/s/rcc2w9ko" class="col-12">
+                <input type="radio" name="test" id="">
+                <input type="radio" name="" id="">
+                <label class="col-12 text-left gray-color" for="form">I am From</label>
+                <div class="col-12 mb-4">
+                    <div class="row from-div mx-2">
+                        <div class="col-6 p-1 checked from-um6p">
+                            <label>
+                                <input type="radio" name="from" id="0" checked class="d-none" value="um6p">
+                                <span>From UM6P</span>
+                            </label>
+                        </div>
+                        <div class="col-6 p-1 not-checked from-other">
+                            <label>
+                                <input type="radio" name="from" id="1" class="d-none" value="other">
+                                <span>From Other</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <label class="col-12 text-left gray-color">Personal Email</label>
-            <div class="col-12">
-                <input type="email" name="email" id="" class="w-100 form-control">
-            </div>
+                <label class="col-12 text-left gray-color">Full Name</label>
+                <div class="col-12">
+                    <input type="email" name="email" id="" class="w-100 form-control">
+                </div>
+                
+                <label class="col-12 text-left gray-color mt-2">School/University  Email</label>
+                <div class="col-12">
+                    <input type="email" name="email" id="" class="w-100 form-control">
+                </div>
+                
+                <input type="hidden" name="_next" value="https://github.com/">
+                <div class="col-12 mt-4">
+                    <button class="btn btn-primary w-100" style="border-radius: 5px !important;">Submit</button>
+                </div>
+            </form>
 
         </div>
     </div>
@@ -80,6 +94,11 @@
                 divParent.siblings().removeClass('checked')
                 divParent.siblings().addClass('not-checked')
             })
+            $('button').on('click', function (e) {
+                e.preventDefault();
+                console.log($('input:radio').val())
+            })
+
         });
     </script>
 </body>
