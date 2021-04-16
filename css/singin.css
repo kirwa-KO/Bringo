@@ -50,10 +50,10 @@ body
     border-radius: 0px 5px 5px 0px;
 } */
 
-input[type="radio"]
+/* input[type="radio"]
 {
     display: none;
-}
+} */
 
 /* div:has(input[type="radio"]:checked)
 {

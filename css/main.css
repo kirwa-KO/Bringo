@@ -112,6 +112,8 @@
 body {
  /* background-color: var(--fiveth); */
  font-family: Muli;
+ height: 100000px;
+ background-color: beige;
 }
 
 /* Start The navbar */
@@ -146,14 +148,14 @@ body {
 
 /* Start the slider */
 
-.slider .carousel-item
+/* .slider .carousel-item
 {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	background-position: center center;
-}
+} */
 
 .swiper-wrapper .carousel-one
 {
@@ -275,3 +277,75 @@ body {
 {
     background-color: var(--primary) !important;
 }
+
+.join-btn
+{
+    font-size: 25px;
+}
+
+/* Start How it Works */
+
+.how-it-works .step-head
+{
+    color: #F5B73D;
+}
+
+.how-it-works .short-desc
+{
+    color: #1D1B84;
+    font-size: 1.5rem;
+}
+
+.how-it-works .long-desc
+{
+    color: #4E6293;
+    font-size: 1.1rem;
+}
+
+.how-it-works .step-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.images-card
+{
+    perspective: 1000px;
+}
+
+.image-background-right
+{
+    /* transform: rotateY(10deg); */
+    transform: rotateY(10deg);
+}
+
+.image-rotate-right
+{
+    /* transform: skewY(2deg); */
+    transform: rotateY(10deg);
+    width: 65%;
+    position: absolute;
+    left: 30%;
+    top: 33%;
+    /* display: none; */
+}
+
+.image-background-left
+{
+    transform: rotateY(-10deg);
+}
+
+.image-rotate-left
+{
+    /* transform: skewY(2deg); */
+    transform: rotateY(-10deg);
+    width: 65%;
+    position: absolute;
+    left: 30%;
+    top: 33%;
+    /* display: none; */
+}
+
+/* End How it Works */
