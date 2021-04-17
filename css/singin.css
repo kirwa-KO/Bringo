@@ -31,6 +31,11 @@ body
 	transition: all .3s ease-in-out;
 }
 
+.not-checked
+{
+    background-color: white;
+}
+
 .from-um6p
 {
     border-top-left-radius: 5px;
