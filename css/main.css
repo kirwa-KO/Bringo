@@ -227,6 +227,26 @@ body {
 	font-size: 200%;
 } */
 
+.section-animate-typing
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    z-index: 3;
+}
+
+.section-center
+{
+    font-size: 150%;
+}
+
+.section-animate-typing > div
+{
+    position: relative;
+    left: -50%;
+    font-size: 200%;
+}
+
 .section-center
 {
     position: absolute;
