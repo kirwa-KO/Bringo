@@ -18,14 +18,15 @@ $(function() {
 		const from = $('input:radio[name="from"]:checked').val()
 		const name = $('input[name="name"]').val()
 		const email = $('input[name="email"]').val()
-    const message = $('input[name="message"]').val()
+		const message = $('textarea[name="message"]').val()
+		console.log(from, name, email, message)
 		if (from !== "" && name !== "" && validateEmail(email) === true) {
-			$.post('https://form.taxi/s/rcc2w9ko', {
+			$.post('https://form.taxi/s/0x1gqsnm', {
 				name: name,
 				email: email,
 				from: from,
 				message: message
 			}, $(location).attr('href', '/congratulation.html'));
-    }
+    	}
 	})
 });
