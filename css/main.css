@@ -54,13 +54,14 @@
 /* ------------------------- */
 
 :root {
- --primary: #048A81;
- --primaryDark: #12615b;
+ --primary: #FAA621;
+ --primaryDark: #EB9A19;
  --second: #444545;
  --third: #DE3C4B;
  --fourth: #87F5FB;
  --fiveth: #84CAE7;
  --gray: #a2a0a9;
+ --darkBg: #373737;
 }
 
 
@@ -113,7 +114,12 @@ body {
  /* background-color: var(--fiveth); */
  font-family: Muli;
  /* height: 100000px; */
- background-color: #EEFCFB;
+ background-color: #FFFAF3;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    border: none;
 }
 
 /* Start The navbar */
@@ -121,26 +127,28 @@ body {
 .navbar
 {
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+    /* background-color: var(--darkBg) !important; */
 }
 
 .navbar img
 {
-    height: 60px;
+    height: 32px;
 }
 
 @media (min-width: 992px) {
     .sing-in {
-        background-color: var(--primary) !important;
+        /* background-color: var(--primary) !important;
         border-radius: 20px 0 0px 20px;
-        border-right: 1px solid white;
+        border-right: 1px solid white; */
     }
     .sing-up {
-        background-color: var(--primary) !important;
-        border-radius: 0px 20px 20px 2px;
+        /* background-color: var(--primary) !important;
+        border-radius: 0px 20px 20px 2px; */
     }
     .sing-in>a,
     .sing-up>a {
-        color: white !important;
+        color: var(--primary) !important;
+        font-weight: bold;
     }
     .home-about-link
     {
